@@ -2,6 +2,7 @@
 
 """This program add the two float numbers and return sum as a float."""
 
+
 def add(a:float, b:float) -> float:
     """
     Add two floats.
