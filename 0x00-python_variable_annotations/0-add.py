@@ -14,3 +14,4 @@ def add(a:float, b:float) -> float:
             containning the addition of two floats numbers A float.
     """
     return a + b
+    
