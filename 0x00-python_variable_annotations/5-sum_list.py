@@ -4,8 +4,10 @@
 This program takes in a list of numbers and return there sum
 """
 
+from typing import List
 
-def sum_list(input_list: list[float]) -> float:
+
+def sum_list(input_list: List[float]) -> float:
     """
     This function calculate the sum of all the floating points numbers
 
@@ -15,7 +17,7 @@ def sum_list(input_list: list[float]) -> float:
           float: sum of the elements in the list
     """
 
-    sum: float = 0
+    sum: float = 0.0
     for i in input_list:
         sum = sum + i
     return sum
