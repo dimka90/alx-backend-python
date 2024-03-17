@@ -4,6 +4,8 @@
 This program takes in a float floor it.
 """
 
+import math
+
 
 def floor(n: float) -> int:
     """
@@ -15,4 +17,4 @@ def floor(n: float) -> int:
             int
     """
 
-    return 3 // 1
+    return math.floor(n)
