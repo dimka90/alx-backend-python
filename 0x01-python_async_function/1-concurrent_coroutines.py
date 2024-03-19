@@ -4,10 +4,11 @@
 This program use runs program concurently using the asyncio module
 """
 import asyncio
+from typing import List
 wait = __import__('0-basic_async_syntax').wait_random
 
 
-async def wait_n(n: int, max_delay: int) -> list:
+async def wait_n(n: int, max_delay: int) -> List[float]:
     """
     A function that returns a list of asyn random calls
     Arguments:
@@ -18,7 +19,7 @@ async def wait_n(n: int, max_delay: int) -> list:
             A list of sorted random generated numbers
     """
 
-    tasks = [wait(max_delay) for _ in range(n)]
+    tasks: List = [wait(max_delay) for _ in range(n)]
 
     delays = await asyncio.gather(*tasks)
 
