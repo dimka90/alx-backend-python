@@ -4,10 +4,10 @@ a type-annotated function make_multiplier that takes a
 float multiplier as argumentand returns a function that
 """
 
-from typing import FloatFunction
+from typing import Callable
 
 
-def make_multiplier(multiplier: float) -> FloatFunction:
+def make_multiplier(multiplier: float) -> Callable[[float], float]:
     """
     This function takes a float multiplier and returns a new function
     that multiplies a float by the given multiplier.
