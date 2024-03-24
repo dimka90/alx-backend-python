@@ -10,7 +10,7 @@ be annotated as a float.
 from typing import List, Union
 
 
-def to_kv(k: str, v: List[Union[int, float]]) -> tuple[str, float]:
+def to_kv(k: str, v: Union[int, float]) -> tuple[str, float]:
     """
     A function that takes a str and either a float or an int
     and return the str, raising the int / float to by exponent
